@@ -1,0 +1,57 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =========================
+   PREMIUM GRADIENT BACKGROUND
+========================= */
+
+body {
+    animation: bgMove 15s ease-in-out infinite;
+  background-color: #ffffff;
+  background-image:
+    radial-gradient(
+      at 0% 100%,
+      rgba(236, 72, 153, 0.25) 0px,
+      transparent 50%
+    ),
+    radial-gradient(
+      at 100% 0%,
+      rgba(99, 102, 241, 0.25) 0px,
+      transparent 50%
+    ),
+    radial-gradient(
+      at 50% 50%,
+      rgba(59, 130, 246, 0.12) 0px,
+      transparent 60%
+    );
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+@keyframes bgMove {
+    0%, 100% {
+      background-position: 0% 100%, 100% 0%, 50% 50%;
+    }
+    50% {
+      background-position: 10% 90%, 90% 10%, 50% 60%;
+    }
+  }
+
+
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-6px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fadeIn {
+    animation: fadeIn 0.2s ease;
+  }
+  

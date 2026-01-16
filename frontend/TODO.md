@@ -1,0 +1,2 @@
+- [ ] Add .navbar-gradient class in frontend/src/index.css with the same background properties as the body
+- [ ] Update frontend/src/components/layout/Navbar.jsx to replace "bg-white" with "navbar-gradient" in the nav className
